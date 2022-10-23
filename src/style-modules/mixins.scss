@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+@mixin reset-indent {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+// Flex, space-between block
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+// semi-bold, blue text
+@mixin sbb-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: $darkBlue;
+}
+
+// bold, dark blue, large text
+@mixin bdbl-text {
+  font-size: 74px;
+  font-weight: 700;
+  color: $darkBlue;
+  line-height: 150%;
+}
+
+// bold, dark blue, medium text
+@mixin bdbm-text {
+  font-size: 48px;
+  font-weight: 700;
+  color: $darkBlue;
+  line-height: 125%;
+}
+
+// regular, dark blue text
+@mixin rdb-text {
+  font-size: 25px;
+  font-weight: 400;
+  color: $darkBlue;
+  line-height: 150%;
+}
+
+// Header menu text
+@mixin menu-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: $grey;
+}
+
+// Header menu button
+@mixin menu-btn {
+  background: none;
+  border: 2px solid $darkBlue;
+  border-radius: 19px;
+  color: $darkBlue;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+@mixin get-in-btn {
+  background: $darkBlue;
+  border: 2px solid $darkBlue;
+  border-radius: 25px;
+  padding: 15px 20px;
+  color: $white;
+  text-decoration: none;
+}
+
+// @mixin hover-blue-btn {
+//   background: none;
+//   color: $blue;
+// }
+
+// On hover button with white background
+@mixin hover-white-btn {
+  cursor: pointer;
+  background: $darkBlue;
+  color: $white;
+}

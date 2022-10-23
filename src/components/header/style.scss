@@ -1,0 +1,27 @@
+@import '../../style-modules/mixins.scss';
+
+.Header {
+  height: 80px;
+  margin-top: 20px;
+}
+
+.Header-container {
+  @include container;
+  @include flex-sb;
+}
+
+.Header-logo {
+  img {
+    width: 50px;
+  }
+  width: 115px;
+}
+
+.Header-btn {
+  @include menu-btn;
+  @include sbb-text;
+}
+
+.Header-btn:hover {
+  @include hover-white-btn;
+}

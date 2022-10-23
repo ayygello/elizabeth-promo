@@ -1,0 +1,10 @@
+.FlexSection {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.FlexSection_flex_between {
+  justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+@import '../../style-modules/mixins.scss';
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+  @include reset-indent;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.Layout {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

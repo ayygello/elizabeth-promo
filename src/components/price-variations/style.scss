@@ -1,0 +1,51 @@
+@import '../../style-modules/mixins.scss';
+@import '../../style-modules/variables.scss';
+
+.PriceVariations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.PriceVariations-header {
+  width: 100%;
+  text-align: center;
+  @include bdbm-text;
+}
+
+.PriceVariations-variant {
+  width: 26%;
+  @include menu-btn;
+  color: $darkBlue;
+  margin: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    @include rdb-text;
+    font-size: 17px;
+  }
+}
+
+.PriceVariations-text {
+  text-align: center;
+  @include menu-text;
+  color: $darkBlue;
+  margin: 0 0 20px 0;
+}
+
+.PriceVariations-cert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  img {
+    width: 600px;
+    border-radius: 10px;
+  }
+}

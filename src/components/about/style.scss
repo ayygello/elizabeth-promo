@@ -1,0 +1,26 @@
+@import '../../style-modules/mixins.scss';
+
+.About-photo {
+  border-radius: 10px;
+  margin: 20px 20px 50px 0;
+}
+
+.About-info {
+  max-width: 620px;
+}
+
+.About-header {
+  @include bdbm-text;
+}
+
+.About-text {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+  @include rdb-text;
+  font-size: 17px;
+}

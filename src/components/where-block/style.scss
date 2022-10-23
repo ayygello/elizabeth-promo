@@ -1,0 +1,46 @@
+@import '../../style-modules/mixins.scss';
+
+.Where-info {
+  padding: 60px 0;
+  max-width: 440px;
+}
+
+.Where-header {
+  margin: 0;
+  @include bdbl-text;
+}
+
+.Where-text {
+  margin: 45px 0 75px;
+  @include rdb-text;
+}
+
+.Where-btn {
+  @include get-in-btn;
+}
+
+.Where-btn:hover {
+  opacity: 0.9;
+}
+
+.Where-photos {
+  padding: 60px 0;
+  /* max-height: 670px; */
+  display: flex;
+  max-width: 625px;
+  flex-wrap: wrap;
+}
+
+.Where-photos img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.Where-photos img:first-child {
+  width: 680px;
+  height: 400px;
+}
+
+.Where-photos img:last-child {
+  width: 55%;
+}
